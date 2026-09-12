@@ -31,15 +31,21 @@ jobs:
           python3 tools/build_fps_pages.py
           python3 - <<'PY'
           from pathlib import Path
+          p=Path('web/config.html')
+          s=p.read_text(encoding='utf-8')
+          marker='<script src="fps-ui-collapse.js"></script>'
+          if marker not in s:
+              if '</body>' not in s: raise SystemExit('Configurator has no body close')
+              s=s.replace('</body>', marker+'\n</body>', 1)
+              p.write_text(s,encoding='utf-8')
           p=Path('web/test.html')
           s=p.read_text(encoding='utf-8')
           marker='<script src="fps-preview-demo.js"></script>'
           if marker not in s:
-              if '</body>' not in s:
-                  raise SystemExit('OSD Preview has no body close')
+              if '</body>' not in s: raise SystemExit('OSD Preview has no body close')
               s=s.replace('</body>', marker+'\n</body>', 1)
               p.write_text(s,encoding='utf-8')
-          print('OSD Preview demo helper installed')
+          print('FPSteVe UI helpers installed')
           PY
 
       - name: Download firmware releases
