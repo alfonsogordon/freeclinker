@@ -17,7 +17,7 @@ FPSteVe Edition builds on that foundation with a simplified configurator, GoPro-
 
 ## See the OSD in action
 
-The project homepage includes a compact animated demonstration using the same background image and **BF 4.5 Pilot Name default** as the integrated Easy Config OSD Preview: **ERR → RDY → CLEAN LENS → ARM/flashing REC → DISARM/full Pilot line while the camera is still recording → delayed stop → RDY**.
+The project homepage includes a compact animated demonstration using the same background image and **newer Betaflight Custom Messages 1–4 defaults** as the integrated Easy Config OSD Preview: **ERR → RDY → CLEAN LENS → ARM/flashing REC → DISARM/full messages while the camera is still recording → delayed stop → RDY**. State changes are immediate rather than faded, matching the Preview behaviour.
 
 You can exercise the same behaviour interactively in the **OSD Preview** inside the configurator.
 
@@ -127,7 +127,9 @@ See the [Quick Start Guide](QUICKSTART.md) before powering the installation.
 
 ## Help & feedback
 
-A dedicated **Squadding Quads Discord** help/feedback thread is planned for FPSteVe Edition. The direct thread link will be added here and to the project website as soon as it is available.
+**Need help? [Join the Squadding Quads Discord](https://discord.gg/eE6DkgEnjU) and ask for FPSteVe.**
+
+A dedicated FPSteVe Edition help/feedback thread is being prepared. The direct thread link will be added here and to the project website when it is available.
 
 Bug reports and useful real-world compatibility results are especially welcome — please include the camera model, Betaflight version and C3 board where possible.
 

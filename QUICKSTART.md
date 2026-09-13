@@ -128,7 +128,9 @@ You shouldn't need to edit CLI values for normal use.
 
 ## Help & feedback
 
-A dedicated **Squadding Quads Discord** FPSteVe Edition help/feedback thread will be linked here once it is available.
+**Need help? [Join the Squadding Quads Discord](https://discord.gg/eE6DkgEnjU) and ask for FPSteVe.**
+
+A dedicated FPSteVe Edition help/feedback thread will be linked here once it is available.
 
 When asking for help, the most useful details are your **camera model, Betaflight version, C3 board and what the OSD is displaying**.
 
