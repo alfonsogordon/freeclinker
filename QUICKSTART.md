@@ -1,4 +1,4 @@
-# FreeCLinker — FPSteVe Edition Quick Start
+# FPV CamBuddy · by FPSteVe — Quick Start
 
 This guide covers both the proven single-camera setup and the **V1.0.2 experimental Multi Cam workflow** on an ESP32-C3 Super Mini.
 
@@ -6,13 +6,13 @@ This guide covers both the proven single-camera setup and the **V1.0.2 experimen
 >
 > Multi Cam and advanced BLE power are development features. **Bench test with props removed before flight.**
 
-> FPSteVe Edition is based on **[FreeCLinker by sheeprine](https://github.com/sheeprine/freeclinker)**. You can also visit the [original FreeCLinker project site](https://sheeprine.github.io/freeclinker/).
+> FPV CamBuddy is based on **[FreeCLinker by sheeprine](https://github.com/sheeprine/freeclinker)**. You can also visit the [original FreeCLinker project site](https://sheeprine.github.io/freeclinker/).
 
 For a full explanation of every V1.0.2 experimental feature, see [EXPERIMENTAL_V1.0.2.md](EXPERIMENTAL_V1.0.2.md).
 
 ## 1. Flash the correct firmware
 
-For V1.0.2 testing, use the **experimental flasher**:
+For V1.0.2 testing, use the **FPV CamBuddy Flasher**:
 
 https://alfonsogordon.github.io/freeclinker/experimental/flash.html
 
@@ -20,7 +20,7 @@ Connect the ESP32-C3 Super Mini by USB and install the latest experimental build
 
 When flashing finishes, **power-cycle the C3 once**.
 
-Then open the **experimental configurator**:
+Then open **FPV CamBuddy Config**:
 
 https://alfonsogordon.github.io/freeclinker/experimental/config.html
 
@@ -28,7 +28,7 @@ Do not use the stable flasher/configurator when you are specifically testing V1.
 
 ## 2. Connect and read settings
 
-Connect to the C3 from FPSteVe Easy Config and use **Read Settings**.
+Connect to the C3 from FPV CamBuddy Config and use **Read Settings**.
 
 Confirm the connected board reports **V1.0.2** before relying on the V1.0.2-only controls.
 
@@ -51,7 +51,7 @@ This gives you a known-good baseline before adding multi-camera complexity.
 
 ## 4. Connect the C3 to your flight controller
 
-FreeCLinker needs one spare flight-controller UART.
+FPV CamBuddy needs one spare flight-controller UART.
 
 For the standard ESP32-C3 Super Mini setup:
 
@@ -70,7 +70,7 @@ Board layouts vary, so confirm the labels/pinout for your actual C3 board.
 
 Open **Betaflight Configurator → Ports**.
 
-Find the UART wired to the C3 and enable **MSP**. FreeCLinker uses **115200 baud**.
+Find the UART wired to the C3 and enable **MSP**. FPV CamBuddy uses **115200 baud**.
 
 Save and reboot the flight controller.
 
@@ -96,7 +96,7 @@ This path is implemented and exercised in the firmware/preview flow but has not 
 
 ## 7. Enable the experimental UI
 
-At the top of the experimental configurator, turn on **Experimental**.
+At the top of FPV CamBuddy Config, turn on **Experimental**.
 
 The yellow **Experimental Multi Cam Settings** section should appear.
 
@@ -127,13 +127,13 @@ A reboot is recommended after changing the Multi Cam mode so the correct camera 
 
 For the **first connection of each GoPro in Multi Cam mode, connect the cameras one at a time**:
 
-1. Power on the first GoPro and let FreeCLinker discover/connect to it and save it.
-2. Then power on the second GoPro and let FreeCLinker discover/connect to that one.
+1. Power on the first GoPro and let FPV CamBuddy discover/connect to it and save it.
+2. Then power on the second GoPro and let FPV CamBuddy discover/connect to that one.
 3. Repeat for any additional GoPros.
 
 After each GoPro has been learned/saved once, they can be powered together and Multi Cam will reconnect to the saved cameras automatically on later boots.
 
-If a GoPro has never been paired with FreeCLinker before, you may also need to open that camera's **Pair** menu for its initial connection.
+If a GoPro has never been paired with FPV CamBuddy before, you may also need to open that camera's **Pair** menu for its initial connection.
 
 ### What ARM/DISARM means in Multi Cam
 
@@ -141,7 +141,7 @@ ARM requests START from connected cameras.
 
 DISARM follows the normal configured stop delay, then requests STOP.
 
-If a camera joins or reconnects later, FreeCLinker attempts to reconcile that camera to the current desired state:
+If a camera joins or reconnects later, FPV CamBuddy attempts to reconcile that camera to the current desired state:
 
 - currently recording → send START
 - currently stopped → send STOP
@@ -251,13 +251,13 @@ Also watch the OSD and LED count during each transition.
 
 ## 15. GoPro pairing note
 
-A GoPro not previously paired with FreeCLinker may need its **Pair** menu opened for the initial connection.
+A GoPro not previously paired with FPV CamBuddy may need its **Pair** menu opened for the initial connection.
 
 In Multi Cam mode, **learn/save new GoPros one at a time on their first connection**. Once each camera has been saved, normal simultaneous automatic reconnect can resume on later boots.
 
 During V1 testing, HERO11 Black Mini and MAX2 provided examples of pairing behaviour. Those models are examples, not a limitation to those specific cameras.
 
-With Wake Guard enabled, FreeCLinker does not deliberately wake a sleeping GoPro just by scanning.
+With Wake Guard enabled, FPV CamBuddy does not deliberately wake a sleeping GoPro just by scanning.
 
 ## 16. What is still experimental
 
@@ -293,4 +293,4 @@ For V1.0.2 reports, include:
 
 ---
 
-**FPSteVe Edition V1.0.2 EXPERIMENTAL** 🤘
+**FPV CamBuddy · by FPSteVe · V1.0.2 EXPERIMENTAL** 🤘
