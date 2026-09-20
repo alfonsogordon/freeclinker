@@ -1,7 +1,11 @@
 > [!IMPORTANT]
-> **FreeCLinker — FPSteVe Edition has evolved into [FPV CamBuddy](https://alfonsogordon.github.io/FPV-CamBuddy/).**  
-> This legacy version remains available, but active development, new features and current documentation have moved to **FPV CamBuddy**.  
-> **[Open FPV CamBuddy →](https://alfonsogordon.github.io/FPV-CamBuddy/)** · **[GitHub →](https://github.com/alfonsogordon/FPV-CamBuddy)**
+> # 🚀 THIS PROJECT HAS MOVED TO FPV CAMBUDDY
+> **FreeCLinker — FPSteVe Edition is now the legacy version.**
+>
+> Active development, new features and current documentation have moved to **FPV CamBuddy**.
+>
+> **➡️ [GO TO FPV CAMBUDDY](https://alfonsogordon.github.io/FPV-CamBuddy/)**  
+> **➡️ [FPV CAMBUDDY GITHUB](https://github.com/alfonsogordon/FPV-CamBuddy)**
 
 # FreeCLinker — FPSteVe Edition
 
